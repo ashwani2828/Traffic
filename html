@@ -302,16 +302,7 @@
         }
         
         // Function to toggle traffic camera view
-        function toggleCamera() {
-            const cameraView = document.getElementById('camera-view');
-            if (cameraView.style.display === 'none') {
-                cameraView.style.display = 'block';
-                // Refresh camera image to get latest
-                document.getElementById('camera-feed').src = CONFIG.cameraFeedUrl + '?t=' + new Date().getTime();
-            } else {
-                cameraView.style.display = 'none';
-            }
-        }
+       
         
         // Main function to refresh all traffic data
         async function refreshTraffic() {
